@@ -1,0 +1,15 @@
+<div class="row justify-content">
+    <div class="col-sm-4 " id=product{{product.id}} *ngFor='let product of products'>
+        <img src="../assets/{{product.img}}" width="220px" height="180px">
+        <h5 class="text-primary">{{product.name}} <br>
+            <button class="btn btn-success align-self-end"(click)=agregarAlCarrito(product)> Add 
+                <i class="fa fa-cart-plus"></i>
+             </button>
+             <button class="btn btn-danger align-self-end"(click)=remover(product)> Remove 
+                <i class="fa fa-trash"></i>
+             </button>
+        </h5>
+                
+        <p> {{product.description}} <br> ${{product.price}}</p>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div>
+    <br>
+    <div class="row bg-dark justify-content-center text-white">
+        <h2 class="text-center">Alta de productos</h2>
+    </div>
+    <table class="table col-sm-12">
+        <tbody class="tbody">
+            <tr>
+                <td><label for="idProduct">Id del producto:</label></td>
+                <td><input type="text" name="idProduct" [(ngModel)] = 'idProduct'></td>
+
+                <td><label for="photoProduct">Foto path:</label></td>
+                <td><input type="text" name="photoProduct" [(ngModel)] = 'photoProduct'></td>
+            </tr>
+            <tr>
+                <td><label for="descriptionProduct">Descripcion del producto:</label></td>
+                <td><input type="text" name="descriptionProduct" [(ngModel)] = 'descriptionProduct'></td>
+
+                <td><label for="priceProduct">Precio del producto:</label></td>
+                <td><input type="text" name="priceProduct" [(ngModel)] = 'priceProduct'></td>
+            </tr>
+            <tr>
+                <td><label for="nameProduct">Nombre del producto:</label></td>
+                <td><input type="text" name="nameProduct" [(ngModel)] = 'nameProduct'></td>
+            </tr>
+            <tr>
+                <td><label for="stockProduct">Stock del producto:</label></td>
+                <td><input type="text" name="stockProduct" [(ngModel)] = 'stockProduct'></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-success" (click)='setearForm()'>Agregar</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+ 
+
+

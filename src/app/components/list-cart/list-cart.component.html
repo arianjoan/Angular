@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-12 bg-success">
+        <h3 class="text-white "> CART <i class="fa fa-cart-plus"></i> </h3>
+    </div>
+</div>
+<br>
+<div class="row" *ngFor="let product of carrito">
+    <div class="col-sm-3">
+        <img src="../assets/{{product.img}}" width="45px" height="45px">
+        <i class="fa fa-trash fa-2x" (click)=borrarDelCarrito(product)></i>
+    </div>
+    <div class="col-sm-9">
+        <h5>{{product.name}} <small> <br> Cantidad: {{product.sales}} </small> </h5>
+    </div>
+    <br>
+</div>
+
+<br>
+<div class="row text-center">
+    <div class="col-sm-12">
+        <button class="btn btn-success" (click)=checkOut()>
+            Checkout
+        </button>
+    </div>
+</div>
+<br>
